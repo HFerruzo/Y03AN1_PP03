@@ -5,14 +5,14 @@ usuarios = []
 # Función para agregar un usuario
 def agregar_usuario(nombre):
     usuarios.append(nombre)
-    st.success(f"Usuario (nombre) agregado.")
+    st.success(f"Usuario {nombre} agregado.")
 
 # Función para mostrar usuarios
 def mostrar_usuarios():
     if usuarios:
         st.write("Lista de usuarios:")
         for usuario in usuario:
-            st.white(f" - (usuario)")
+            st.white(f" - {usuario}")
     else:
         st.warning("No hay usuarios registrados.")
 
